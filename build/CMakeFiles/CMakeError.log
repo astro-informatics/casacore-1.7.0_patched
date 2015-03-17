@@ -1,0 +1,41 @@
+Compiling the Fortran compiler identification source file "CMakeFortranCompilerId.F" failed.
+Compiler: /sw/bin/gfortran 
+Build flags: 
+Id flags: 
+
+The output was:
+Segmentation fault
+
+
+Compiling the Fortran compiler identification source file "CMakeFortranCompilerId.F" failed.
+Compiler: /sw/bin/gfortran 
+Build flags: 
+Id flags: -c
+
+The output was:
+Segmentation fault
+
+
+Compiling the Fortran compiler identification source file "CMakeFortranCompilerId.F" failed.
+Compiler: /sw/bin/gfortran 
+Build flags: 
+Id flags: -fpp
+
+The output was:
+Segmentation fault
+
+
+Checking whether the Fortran compiler is Compaq using "-what" did not match "Compaq Visual Fortran":
+Checking whether the Fortran compiler is NAG using "-V" did not match "NAG Fortran Compiler":
+Determining if the Fortran compiler works failed with the following output:
+Change Dir: /Users/mcewen/Src/casacore-1.7.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3170511472/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec3170511472.dir/build.make CMakeFiles/cmTryCompileExec3170511472.dir/build
+/sw/bin/cmake -E cmake_progress_report /Users/mcewen/Src/casacore-1.7.0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building Fortran object CMakeFiles/cmTryCompileExec3170511472.dir/testFortranCompiler.f.o
+/sw/bin/gfortran    -c /Users/mcewen/Src/casacore-1.7.0/build/CMakeFiles/CMakeTmp/testFortranCompiler.f -o CMakeFiles/cmTryCompileExec3170511472.dir/testFortranCompiler.f.o
+make[1]: *** [CMakeFiles/cmTryCompileExec3170511472.dir/testFortranCompiler.f.o] Segmentation fault: 11
+make: *** [cmTryCompileExec3170511472/fast] Error 2
+
+
