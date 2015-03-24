@@ -1,4 +1,4 @@
-//# LatticeStatistics.cc: generate statistics from a MaskedLattice
+//# Latticestatistics.cc: generate statistics from a MaskedLattice
 //# Copyright (C) 1996,1997,1998,1999,2000,2001,2002,2003,2004
 //# Associated Universities, Inc. Washington DC, USA.
 //#
@@ -1542,7 +1542,7 @@ namespace casa { //# NAMESPACE CASA - BEGIN
     const Int n1 = d.nelements();
 
     for (Int i=0; i<n1; i++) {
-      if (real(n(i)) > 0.5) {
+      if (real<AccumType>(n(i)) > 0.5) {
         if (init) {
           dMin = d(i);
           dMax = d(i);
@@ -2200,7 +2200,7 @@ namespace casa { //# NAMESPACE CASA - BEGIN
     plotter.page();
 
     if (nL>0) {
-      plotter.swin(real(xMin), real(xMax), real(yLMin), real(yLMax));
+      plotter.swin(real<double>(xMin), real<double>(xMax), real<double>(yLMin), real<double>(yLMax));
       if (nR>0) {
         plotter.box("BCNST", 0.0, 0, "BNST", 0.0, 0);
       } else {
@@ -2308,7 +2308,7 @@ namespace casa { //# NAMESPACE CASA - BEGIN
 
     i = -1;
     if (nR>0) {
-      plotter.swin(real(xMin), real(xMax), real(yRMin), real(yRMax));
+      plotter.swin(real<double>(xMin), real<double>(xMax), real<double>(yRMin), real<double>(yRMax));
       plotter.sci (1); 
       if (nL>0) {
         plotter.box("", 0.0, 0, "CMST", 0.0, 0);
@@ -2397,12 +2397,12 @@ namespace casa { //# NAMESPACE CASA - BEGIN
       yb = result(Slice(4,4));
       Float dy = yb(1) - yb(0);
 
-      Float mx = real(xMin) + dx;
+      Float mx = real<double>(xMin) + dx;
       Float my;
       if (nR > 0) {
-        my = real(yRMax) + 0.5*dy;
+        my = real<double>(yRMax) + 0.5*dy;
       } else {
-        my = real(yLMax) + 0.5*dy;
+        my = real<double>(yLMax) + 0.5*dy;
       }
 
       Int tbg;
@@ -2459,8 +2459,8 @@ namespace casa { //# NAMESPACE CASA - BEGIN
   //  Bool     False if didn't find another valid datum
   {
     for (uInt i=iStart; i<n; i++) {
-      if ( (findGood && real(mask(i))>0.5) ||
-           (!findGood && real(mask(i))<0.5) ) {
+      if ( (findGood && real<AccumType>(mask(i))>0.5) ||
+           (!findGood && real<AccumType>(mask(i))<0.5) ) {
         iFound = i;
         return True;
       }
@@ -2705,7 +2705,7 @@ namespace casa { //# NAMESPACE CASA - BEGIN
         pStoreLattice_p->getSlice(stats, pos, shape, IPosition(1,1));
    
         pos(0) = NPTS;
-        if (Int(real(stats(pos))+0.1) > 0) {
+        if (Int(std::real<AccumType>(stats(pos))+0.1) > 0) {
           someGoodPointsValue_p = True;
         } else {
           someGoodPointsValue_p = False;
@@ -2737,7 +2737,7 @@ namespace casa { //# NAMESPACE CASA - BEGIN
 
         for (pixelIterator.reset(); !pixelIterator.atEnd(); pixelIterator++) {
           for (Int i=0; i<n1; i++) {
-            if (Int(real(pixelIterator.matrixCursor()(i,NPTS))+0.1) > 0) {
+            if (Int(std::real<AccumType>(pixelIterator.matrixCursor()(i,NPTS))+0.1) > 0) {
               someGoodPointsValue_p = True;
               return someGoodPointsValue_p;
             }

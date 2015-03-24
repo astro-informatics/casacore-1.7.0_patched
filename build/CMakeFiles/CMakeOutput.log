@@ -160,3 +160,211 @@ Parsed CXX implicit link information from above output:
   implicit dirs: []
 
 
+Compiling the Fortran compiler identification source file "CMakeFortranCompilerId.F" succeeded.
+Compiler: /sw/bin/gfortran 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the Fortran compiler identification source "CMakeFortranCompilerId.F" produced "a.out"
+
+The Fortran compiler identification is GNU, found in "/Users/mcewen/AP/Src/casacore-1.7.0/build/CMakeFiles/2.8.10.2/CompilerIdFortran/a.out"
+
+Determining if the Fortran compiler works passed with the following output:
+Change Dir: /Users/mcewen/AP/Src/casacore-1.7.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1376195319/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec1376195319.dir/build.make CMakeFiles/cmTryCompileExec1376195319.dir/build
+/sw/bin/cmake -E cmake_progress_report /Users/mcewen/AP/Src/casacore-1.7.0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building Fortran object CMakeFiles/cmTryCompileExec1376195319.dir/testFortranCompiler.f.o
+/sw/bin/gfortran    -c /Users/mcewen/AP/Src/casacore-1.7.0/build/CMakeFiles/CMakeTmp/testFortranCompiler.f -o CMakeFiles/cmTryCompileExec1376195319.dir/testFortranCompiler.f.o
+Linking Fortran executable cmTryCompileExec1376195319
+/sw/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1376195319.dir/link.txt --verbose=1
+/sw/bin/gfortran         CMakeFiles/cmTryCompileExec1376195319.dir/testFortranCompiler.f.o  -o cmTryCompileExec1376195319  
+
+
+Detecting Fortran compiler ABI info compiled with the following output:
+Change Dir: /Users/mcewen/AP/Src/casacore-1.7.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2879338284/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec2879338284.dir/build.make CMakeFiles/cmTryCompileExec2879338284.dir/build
+/sw/bin/cmake -E cmake_progress_report /Users/mcewen/AP/Src/casacore-1.7.0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building Fortran object CMakeFiles/cmTryCompileExec2879338284.dir/CMakeFortranCompilerABI.F.o
+/sw/bin/gfortran    -c /sw/share/cmake-2.8/Modules/CMakeFortranCompilerABI.F -o CMakeFiles/cmTryCompileExec2879338284.dir/CMakeFortranCompilerABI.F.o
+Linking Fortran executable cmTryCompileExec2879338284
+/sw/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2879338284.dir/link.txt --verbose=1
+/sw/bin/gfortran   -v     CMakeFiles/cmTryCompileExec2879338284.dir/CMakeFortranCompilerABI.F.o  -o cmTryCompileExec2879338284   
+Driving: /sw/bin/gfortran -mmacosx-version-min=10.9 -v CMakeFiles/cmTryCompileExec2879338284.dir/CMakeFortranCompilerABI.F.o -o cmTryCompileExec2879338284 -l gfortran -shared-libgcc
+Using built-in specs.
+COLLECT_GCC=/sw/bin/gfortran
+COLLECT_LTO_WRAPPER=/sw/lib/gcc4.7/libexec/gcc/x86_64-apple-darwin11.4.2/4.7.2/lto-wrapper
+Target: x86_64-apple-darwin11.4.2
+Configured with: ../gcc-4.7.2/configure --prefix=/sw --prefix=/sw/lib/gcc4.7 --mandir=/sw/share/man --infodir=/sw/lib/gcc4.7/info --enable-languages=c,c++,fortran,lto,objc,obj-c++,java --with-gmp=/sw --with-libiconv-prefix=/sw --with-ppl=/sw --with-cloog=/sw --with-mpc=/sw --with-system-zlib --x-includes=/usr/X11R6/include --x-libraries=/usr/X11R6/lib --program-suffix=-fsf-4.7 --enable-cloog-backend=isl
+Thread model: posix
+gcc version 4.7.2 (GCC) 
+Reading specs from /sw/lib/gcc4.7/lib/gcc/x86_64-apple-darwin11.4.2/4.7.2/../../../libgfortran.spec
+rename spec lib to liborig
+COLLECT_GCC_OPTIONS='-mmacosx-version-min=10.9' '-v' '-o' 'cmTryCompileExec2879338284' '-shared-libgcc' '-mtune=core2'
+COMPILER_PATH=/sw/lib/gcc4.7/libexec/gcc/x86_64-apple-darwin11.4.2/4.7.2/:/sw/lib/gcc4.7/libexec/gcc/x86_64-apple-darwin11.4.2/4.7.2/:/sw/lib/gcc4.7/libexec/gcc/x86_64-apple-darwin11.4.2/:/sw/lib/gcc4.7/lib/gcc/x86_64-apple-darwin11.4.2/4.7.2/:/sw/lib/gcc4.7/lib/gcc/x86_64-apple-darwin11.4.2/
+LIBRARY_PATH=/sw/lib/gcc4.7/lib/gcc/x86_64-apple-darwin11.4.2/4.7.2/:/sw/lib/gcc4.7/lib/gcc/x86_64-apple-darwin11.4.2/4.7.2/../../../:/usr/lib/
+COLLECT_GCC_OPTIONS='-mmacosx-version-min=10.9' '-v' '-o' 'cmTryCompileExec2879338284' '-shared-libgcc' '-mtune=core2'
+ /sw/lib/gcc4.7/libexec/gcc/x86_64-apple-darwin11.4.2/4.7.2/collect2 -dynamic -arch x86_64 -macosx_version_min 10.9 -weak_reference_mismatches non-weak -o cmTryCompileExec2879338284 -L/sw/lib/gcc4.7/lib/gcc/x86_64-apple-darwin11.4.2/4.7.2 -L/sw/lib/gcc4.7/lib/gcc/x86_64-apple-darwin11.4.2/4.7.2/../../.. CMakeFiles/cmTryCompileExec2879338284.dir/CMakeFortranCompilerABI.F.o -lgfortran -no_compact_unwind -lSystem -lgcc_ext.10.5 -lgcc -lquadmath -lm -lgcc_ext.10.5 -lgcc -lSystem -v
+collect2 version 4.7.2
+/usr/bin/ld -dynamic -arch x86_64 -macosx_version_min 10.9 -weak_reference_mismatches non-weak -o cmTryCompileExec2879338284 -L/sw/lib/gcc4.7/lib/gcc/x86_64-apple-darwin11.4.2/4.7.2 -L/sw/lib/gcc4.7/lib/gcc/x86_64-apple-darwin11.4.2/4.7.2/../../.. CMakeFiles/cmTryCompileExec2879338284.dir/CMakeFortranCompilerABI.F.o -lgfortran -no_compact_unwind -lSystem -lgcc_ext.10.5 -lgcc -lquadmath -lm -lgcc_ext.10.5 -lgcc -lSystem -v
+@(#)PROGRAM:ld  PROJECT:ld64-241.9
+configured to support archs: armv6 armv7 armv7s arm64 i386 x86_64 x86_64h armv6m armv7m armv7em
+Library search paths:
+	/sw/lib/gcc4.7/lib/gcc/x86_64-apple-darwin11.4.2/4.7.2
+	/sw/lib/gcc4.7/lib
+	/usr/lib
+	/usr/local/lib
+Framework search paths:
+	/Library/Frameworks/
+	/System/Library/Frameworks/
+
+
+Parsed Fortran implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/mcewen/AP/Src/casacore-1.7.0/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec2879338284/fast"]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec2879338284.dir/build.make CMakeFiles/cmTryCompileExec2879338284.dir/build]
+  ignore line: [/sw/bin/cmake -E cmake_progress_report /Users/mcewen/AP/Src/casacore-1.7.0/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building Fortran object CMakeFiles/cmTryCompileExec2879338284.dir/CMakeFortranCompilerABI.F.o]
+  ignore line: [/sw/bin/gfortran    -c /sw/share/cmake-2.8/Modules/CMakeFortranCompilerABI.F -o CMakeFiles/cmTryCompileExec2879338284.dir/CMakeFortranCompilerABI.F.o]
+  ignore line: [Linking Fortran executable cmTryCompileExec2879338284]
+  ignore line: [/sw/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2879338284.dir/link.txt --verbose=1]
+  ignore line: [/sw/bin/gfortran   -v     CMakeFiles/cmTryCompileExec2879338284.dir/CMakeFortranCompilerABI.F.o  -o cmTryCompileExec2879338284   ]
+  ignore line: [Driving: /sw/bin/gfortran -mmacosx-version-min=10.9 -v CMakeFiles/cmTryCompileExec2879338284.dir/CMakeFortranCompilerABI.F.o -o cmTryCompileExec2879338284 -l gfortran -shared-libgcc]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/sw/bin/gfortran]
+  ignore line: [COLLECT_LTO_WRAPPER=/sw/lib/gcc4.7/libexec/gcc/x86_64-apple-darwin11.4.2/4.7.2/lto-wrapper]
+  ignore line: [Target: x86_64-apple-darwin11.4.2]
+  ignore line: [Configured with: ../gcc-4.7.2/configure --prefix=/sw --prefix=/sw/lib/gcc4.7 --mandir=/sw/share/man --infodir=/sw/lib/gcc4.7/info --enable-languages=c,c++,fortran,lto,objc,obj-c++,java --with-gmp=/sw --with-libiconv-prefix=/sw --with-ppl=/sw --with-cloog=/sw --with-mpc=/sw --with-system-zlib --x-includes=/usr/X11R6/include --x-libraries=/usr/X11R6/lib --program-suffix=-fsf-4.7 --enable-cloog-backend=isl]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.7.2 (GCC) ]
+  ignore line: [Reading specs from /sw/lib/gcc4.7/lib/gcc/x86_64-apple-darwin11.4.2/4.7.2/../../../libgfortran.spec]
+  ignore line: [rename spec lib to liborig]
+  ignore line: [COLLECT_GCC_OPTIONS='-mmacosx-version-min=10.9' '-v' '-o' 'cmTryCompileExec2879338284' '-shared-libgcc' '-mtune=core2']
+  ignore line: [COMPILER_PATH=/sw/lib/gcc4.7/libexec/gcc/x86_64-apple-darwin11.4.2/4.7.2/:/sw/lib/gcc4.7/libexec/gcc/x86_64-apple-darwin11.4.2/4.7.2/:/sw/lib/gcc4.7/libexec/gcc/x86_64-apple-darwin11.4.2/:/sw/lib/gcc4.7/lib/gcc/x86_64-apple-darwin11.4.2/4.7.2/:/sw/lib/gcc4.7/lib/gcc/x86_64-apple-darwin11.4.2/]
+  ignore line: [LIBRARY_PATH=/sw/lib/gcc4.7/lib/gcc/x86_64-apple-darwin11.4.2/4.7.2/:/sw/lib/gcc4.7/lib/gcc/x86_64-apple-darwin11.4.2/4.7.2/../../../:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-mmacosx-version-min=10.9' '-v' '-o' 'cmTryCompileExec2879338284' '-shared-libgcc' '-mtune=core2']
+  link line: [ /sw/lib/gcc4.7/libexec/gcc/x86_64-apple-darwin11.4.2/4.7.2/collect2 -dynamic -arch x86_64 -macosx_version_min 10.9 -weak_reference_mismatches non-weak -o cmTryCompileExec2879338284 -L/sw/lib/gcc4.7/lib/gcc/x86_64-apple-darwin11.4.2/4.7.2 -L/sw/lib/gcc4.7/lib/gcc/x86_64-apple-darwin11.4.2/4.7.2/../../.. CMakeFiles/cmTryCompileExec2879338284.dir/CMakeFortranCompilerABI.F.o -lgfortran -no_compact_unwind -lSystem -lgcc_ext.10.5 -lgcc -lquadmath -lm -lgcc_ext.10.5 -lgcc -lSystem -v]
+    arg [/sw/lib/gcc4.7/libexec/gcc/x86_64-apple-darwin11.4.2/4.7.2/collect2] ==> ignore
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [x86_64] ==> ignore
+    arg [-macosx_version_min] ==> ignore
+    arg [10.9] ==> ignore
+    arg [-weak_reference_mismatches] ==> ignore
+    arg [non-weak] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec2879338284] ==> ignore
+    arg [-L/sw/lib/gcc4.7/lib/gcc/x86_64-apple-darwin11.4.2/4.7.2] ==> dir [/sw/lib/gcc4.7/lib/gcc/x86_64-apple-darwin11.4.2/4.7.2]
+    arg [-L/sw/lib/gcc4.7/lib/gcc/x86_64-apple-darwin11.4.2/4.7.2/../../..] ==> dir [/sw/lib/gcc4.7/lib/gcc/x86_64-apple-darwin11.4.2/4.7.2/../../..]
+    arg [CMakeFiles/cmTryCompileExec2879338284.dir/CMakeFortranCompilerABI.F.o] ==> ignore
+    arg [-lgfortran] ==> lib [gfortran]
+    arg [-no_compact_unwind] ==> ignore
+    arg [-lSystem] ==> lib [System]
+    arg [-lgcc_ext.10.5] ==> lib [gcc_ext.10.5]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lquadmath] ==> lib [quadmath]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_ext.10.5] ==> lib [gcc_ext.10.5]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lSystem] ==> lib [System]
+    arg [-v] ==> ignore
+  remove lib [System]
+  remove lib [gcc_ext.10.5]
+  remove lib [gcc]
+  remove lib [gcc_ext.10.5]
+  remove lib [gcc]
+  remove lib [System]
+  collapse dir [/sw/lib/gcc4.7/lib/gcc/x86_64-apple-darwin11.4.2/4.7.2] ==> [/sw/lib/gcc4.7/lib/gcc/x86_64-apple-darwin11.4.2/4.7.2]
+  collapse dir [/sw/lib/gcc4.7/lib/gcc/x86_64-apple-darwin11.4.2/4.7.2/../../..] ==> [/sw/lib/gcc4.7/lib]
+  implicit libs: [gfortran;quadmath;m]
+  implicit dirs: [/sw/lib/gcc4.7/lib/gcc/x86_64-apple-darwin11.4.2/4.7.2;/sw/lib/gcc4.7/lib]
+
+
+Determining if the Fortran compiler supports Fortran 90 passed with the following output:
+Change Dir: /Users/mcewen/AP/Src/casacore-1.7.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4052269499/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec4052269499.dir/build.make CMakeFiles/cmTryCompileExec4052269499.dir/build
+/sw/bin/cmake -E cmake_progress_report /Users/mcewen/AP/Src/casacore-1.7.0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building Fortran object CMakeFiles/cmTryCompileExec4052269499.dir/testFortranCompilerF90.f90.o
+/sw/bin/gfortran    -c /Users/mcewen/AP/Src/casacore-1.7.0/build/CMakeFiles/CMakeTmp/testFortranCompilerF90.f90 -o CMakeFiles/cmTryCompileExec4052269499.dir/testFortranCompilerF90.f90.o
+Linking Fortran executable cmTryCompileExec4052269499
+/sw/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4052269499.dir/link.txt --verbose=1
+/sw/bin/gfortran         CMakeFiles/cmTryCompileExec4052269499.dir/testFortranCompilerF90.f90.o  -o cmTryCompileExec4052269499  
+
+
+Determining if the Fortran dgemm exists passed with the following output:
+Change Dir: /Users/mcewen/AP/Src/casacore-1.7.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1924835529/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec1924835529.dir/build.make CMakeFiles/cmTryCompileExec1924835529.dir/build
+/sw/bin/cmake -E cmake_progress_report /Users/mcewen/AP/Src/casacore-1.7.0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building Fortran object CMakeFiles/cmTryCompileExec1924835529.dir/testFortranCompiler.f.o
+/sw/bin/gfortran    -c /Users/mcewen/AP/Src/casacore-1.7.0/build/CMakeFiles/CMakeTmp/testFortranCompiler.f -o CMakeFiles/cmTryCompileExec1924835529.dir/testFortranCompiler.f.o
+Linking Fortran executable cmTryCompileExec1924835529
+/sw/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1924835529.dir/link.txt --verbose=1
+/sw/bin/gfortran         CMakeFiles/cmTryCompileExec1924835529.dir/testFortranCompiler.f.o  -o cmTryCompileExec1924835529  /sw/lib/libf77blas.a /sw/lib/libatlas.a 
+
+
+Determining if files pthread.h exist passed with the following output:
+Change Dir: /Users/mcewen/AP/Src/casacore-1.7.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1420603455/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec1420603455.dir/build.make CMakeFiles/cmTryCompileExec1420603455.dir/build
+/sw/bin/cmake -E cmake_progress_report /Users/mcewen/AP/Src/casacore-1.7.0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1420603455.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk   -o CMakeFiles/cmTryCompileExec1420603455.dir/CheckIncludeFiles.c.o   -c /Users/mcewen/AP/Src/casacore-1.7.0/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec1420603455
+/sw/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1420603455.dir/link.txt --verbose=1
+/usr/bin/cc      -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec1420603455.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec1420603455  
+
+
+Determining if the pthread_create exist passed with the following output:
+Change Dir: /Users/mcewen/AP/Src/casacore-1.7.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2527069597/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec2527069597.dir/build.make CMakeFiles/cmTryCompileExec2527069597.dir/build
+/sw/bin/cmake -E cmake_progress_report /Users/mcewen/AP/Src/casacore-1.7.0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2527069597.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk   -o CMakeFiles/cmTryCompileExec2527069597.dir/CheckSymbolExists.c.o   -c /Users/mcewen/AP/Src/casacore-1.7.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec2527069597
+/sw/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2527069597.dir/link.txt --verbose=1
+/usr/bin/cc      -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec2527069597.dir/CheckSymbolExists.c.o  -o cmTryCompileExec2527069597  
+
+File /Users/mcewen/AP/Src/casacore-1.7.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the Fortran cheev exists passed with the following output:
+Change Dir: /Users/mcewen/AP/Src/casacore-1.7.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec429120395/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec429120395.dir/build.make CMakeFiles/cmTryCompileExec429120395.dir/build
+/sw/bin/cmake -E cmake_progress_report /Users/mcewen/AP/Src/casacore-1.7.0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building Fortran object CMakeFiles/cmTryCompileExec429120395.dir/testFortranCompiler.f.o
+/sw/bin/gfortran    -c /Users/mcewen/AP/Src/casacore-1.7.0/build/CMakeFiles/CMakeTmp/testFortranCompiler.f -o CMakeFiles/cmTryCompileExec429120395.dir/testFortranCompiler.f.o
+Linking Fortran executable cmTryCompileExec429120395
+/sw/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec429120395.dir/link.txt --verbose=1
+/sw/bin/gfortran         CMakeFiles/cmTryCompileExec429120395.dir/testFortranCompiler.f.o  -o cmTryCompileExec429120395  -framework Accelerate /sw/lib/libf77blas.a /sw/lib/libatlas.a 
+
+

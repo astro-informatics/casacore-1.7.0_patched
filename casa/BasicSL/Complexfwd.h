@@ -42,9 +42,11 @@
 
 // <group name=Complexfwd>
 
-namespace std {
-  template<class T> class complex;
-}
+// Change by JDM to fix build errors
+#include<complex>
+//namespace std {
+//  template<class T> class complex;
+//}
 
 namespace casa { //# NAMESPACE CASA - BEGIN
 
